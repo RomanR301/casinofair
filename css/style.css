@@ -311,9 +311,43 @@ img.mobile-image {
 .socials-item:hover {
   transform: scale(1.08);
 }
+
+.funfair-page .hero-screen-text {
+  font-size: 45px;
+  width: 50%;
+}
+.funfair-page .cta .btn-primary {
+  margin-top: 20px;
+}
+.btn-primary {
+  background: #FF0066;
+  border: 2px solid #FF0066;
+  padding: 8px 48px;
+  font-weight: 600;
+  font-size: 19px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  transition: all .3s ease-in-out;
+}
+.btn-primary:hover {
+  background: transparent;
+}
+.btn-primary:before {
+  display: none;
+}
 @media (min-width: 1752px) {
   .cta, .text-block {
     padding: 120px 0;
+  }
+}
+@media (min-width: 2000px) {
+  .cta, .text-block {
+    padding: 140px 0;
+  }
+}
+@media (min-width: 2400px) {
+  .cta, .text-block {
+    padding: 160px 0;
   }
 }
 @media (max-width: 767px) {
@@ -336,6 +370,11 @@ img.mobile-image {
     font-size: 35px;
     padding-top: 45px;
   }
+  .funfair-page .hero-screen-text {
+    font-size: 30px;
+    padding-top: 30px;
+    width: 100%;
+  }
   img.mobile-image {
     display: block;
   }
@@ -352,6 +391,12 @@ img.mobile-image {
     width: 100%;
     max-width: 250px;
     margin: 0 45px 45px 45px;
+  }
+  .funfair-page .cta-image {
+    max-width: 165px;
+    width: 100%;
+    margin-right: auto;
+    margin: 0 auto 45px 0;
   }
   .cta-text {
     width: 100%;
@@ -373,5 +418,10 @@ img.mobile-image {
   }
   .cta-image {
     max-width: 150px;
+  }
+  .funfair-page .hero-screen-text {
+    font-size: 26px;
+    padding-top: 26px;
+    width: 100%;
   }
 }
