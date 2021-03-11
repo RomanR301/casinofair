@@ -69,7 +69,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 article, aside, details, figcaption, figure,
@@ -116,12 +116,15 @@ p {
 
 .header {
   background: #141414;
+  /* padding: 12px 0; */
+  height: 56px;
 }
 
 .header .container {
   justify-content: space-between;
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 .brand-logo, .funfair-logo {
@@ -157,6 +160,7 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: bottom;
 }
 .hero-screen-text {
   color: #ffffff;
@@ -176,6 +180,10 @@ p {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  object-position: bottom;
+}
+img.mobile-image {
+  display: none;
 }
 
 .text-block {
@@ -187,6 +195,7 @@ p {
 .text-block a {
   font-weight: 600;
   position: relative;
+  display: inline-block;
   color: #003366;
   text-decoration: none;
 }
@@ -231,6 +240,7 @@ p {
   color: #ffffff;
 }
 .cta-text a {
+  display: inline-block;
   font-weight: 600;
   position: relative;
   color: #ffffff;
@@ -269,5 +279,71 @@ p {
 }
 .socials-item {
   display: flex;
-  margin: 0 20px;
+  transition: all .3s ease-in-out;
+}
+.footer-socials .socials-item:first-child {
+  margin-right: 40px;
+}
+.socials-item:hover {
+  transform: scale(1.08);
+}
+
+@media (max-width: 767px) {
+  .header .container {
+    padding: 0 15px;
+  }
+  .container {
+    padding: 0 35px;
+  }
+  .hero-screen {
+    height: 400px;
+  }
+  .hero-screen .container {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .hero-screen-text {
+    width: 270px;
+    font-size: 35px;
+    padding-top: 45px;
+  }
+  img.mobile-image {
+    display: block;
+  }
+  img.desktop-image {
+    display: none;
+  }
+  .cta {
+    padding: 40px 0 20px 0;
+  }
+  .cta .container {
+    flex-direction: column;
+  }
+  .cta-image {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 45px 45px 45px;
+  }
+  .cta-text {
+    width: 100%;
+  }
+  .footer {
+    padding: 43px 0 50px 0;
+  }
+  .footer .container {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .brand-logo {
+    max-width: 115px;
+  }
+  .funfair-logo {
+    max-width: 100px;
+  }
+  .cta-image {
+    max-width: 150px;
+  }
 }
