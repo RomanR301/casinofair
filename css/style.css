@@ -287,7 +287,11 @@ img.mobile-image {
 .socials-item:hover {
   transform: scale(1.08);
 }
-
+@media (min-width: 1752px) {
+  .cta, .text-block {
+    padding: 120px 0;
+  }
+}
 @media (max-width: 767px) {
   .header .container {
     padding: 0 15px;
