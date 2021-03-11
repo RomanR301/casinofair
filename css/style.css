@@ -1,0 +1,273 @@
+@font-face {
+  font-family: "Poppins";
+  font-display: swap;
+  src: url("../fonts/Poppins-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-display: swap;
+  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-display: swap;
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-display: swap;
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-display: swap;
+  src: url("../fonts/Poppins-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #003366;
+  font-weight: 300;
+  vertical-align: baseline;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+body {
+  position: relative;
+  background: #ffffff;
+  color: #003366;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+p {
+  margin-bottom: 20px;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 992px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header {
+  background: #141414;
+}
+
+.header .container {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo, .funfair-logo {
+  display: flex;
+}
+
+.brand-logo img, .funfair-logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.hero-screen {
+  height: 250px;
+  position: relative;
+}
+.hero-screen .container{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.hero-screen-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.hero-screen-bg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-screen-text {
+  color: #ffffff;
+  font-size: 55px;
+  width: 40%;
+  font-weight: 700;
+}
+.hero-screen-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.hero-screen-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.text-block {
+  padding: 40px 0;
+}
+.text-block p {
+  color: #003366;
+}
+.text-block a {
+  font-weight: 600;
+  position: relative;
+  color: #003366;
+  text-decoration: none;
+}
+.text-block a:before {
+  content: '';
+  position: absolute;
+  background: #003366;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  opacity: 1;
+  transition: all .3s ease-in-out;
+}
+.text-block a:hover:before {
+  width: 0;
+}
+
+.cta {
+  padding: 50px 0;
+  background: linear-gradient(184.21deg, #311A3E -17.78%, #013364 94.72%);
+}
+
+.cta .container {
+  display: flex;
+  align-items: center;
+}
+.cta-image {
+  width: 30%;
+  margin: 0 70px;
+}
+.cta-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.cta-text {
+  width: 70%;
+}
+.cta-text p {
+  color: #ffffff;
+}
+.cta-text a {
+  font-weight: 600;
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+}
+.cta-text a:before {
+  content: '';
+  position: absolute;
+  background: #ffffff;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  opacity: 1;
+  transition: all .3s ease-in-out;
+}
+.cta-text a:hover:before {
+  width: 0;
+}
+.footer {
+  background: #141414;
+  padding: 37px;
+}
+.footer p {
+  color: #ffffff;
+  margin-bottom: 35px;
+}
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-socials {
+  display: flex;
+  align-items: center;
+}
+.socials-item {
+  display: flex;
+  margin: 0 20px;
+}
